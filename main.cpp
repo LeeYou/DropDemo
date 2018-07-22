@@ -83,7 +83,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 		PathRemoveFileSpec(lpResPath);
 		PathAddBackslash(lpResPath);
 		// 这里用自己工程 名
-		_tcscat_s(lpResPath, MAX_PATH, _T("demos\\DropDemo\\uires"));
+		_tcscat_s(lpResPath, MAX_PATH, _T("uires"));
 		if (!pResProvider->Init((LPARAM)lpResPath, 0))
 		{
 			SASSERT(0);
